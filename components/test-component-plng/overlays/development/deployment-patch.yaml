@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-plng
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-noav-tenant/test-app-zhts/test-component-plng@sha256:c81640108e66d415c62b3e7208b226df29f4c42182d9e679e9e410de02dbec43
+        name: my-python
+        resources: {}
+status: {}
